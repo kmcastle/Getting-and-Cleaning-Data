@@ -1,0 +1,127 @@
+code_book.txt
+
+Coursera Getting and Cleaning Data Assignment
+
+Kasandra Castle
+==================================================================
+Source Study:
+Human Activity Recognition Using Smartphones Dataset
+Version 1.0
+
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+==================================================================
+
+Source data can be accessed at:
+ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+A description of the source data can be found at:
+ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+==================================================================
+
+This code book correspondes to the samsung_tidy_data.txt file found in this repository.
+
+The data set contains 81 columns. Measurements include means grouped by subject and activity, columns 1 and 81.
+
+[1] subject: subjects are identified by an integer from 1 to 30
+[2] timeBodyAccelerationMeanX                              
+[3] timeBodyAccelerationMeanY
+[4] timeBodyAccelerationMeanZ
+[5] timeBodyAccelerationStandardDeviationX
+[6] timeBodyAccelerationStandardDeviationY                 
+[7] timeBodyAccelerationStandardDeviationZ
+[8] timeGravityAccelerationMeanX                           
+[9] timeGravityAccelerationMeanY
+[10] timeGravityAccelerationMeanZ                           
+[11] timeGravityAccelerationStandardDeviationX
+[12] timeGravityAccelerationStandardDeviationY
+[13] timeGravityAccelerationStandardDeviationZ
+[14] timeBodyAccelerationJerkMeanX                          
+[15] timeBodyAccelerationJerkMeanY
+[16] timeBodyAccelerationJerkMeanZ
+[17] timeBodyAccelerationJerkStandardDeviationX
+[18] timeBodyAccelerationJerkStandardDeviationY            
+[19] timeBodyAccelerationJerkStandardDeviationZ
+[20] timeBodyGyroscopeMeanX                                
+[21] timeBodyGyroscopeMeanY 
+[22] timeBodyGyroscopeMeanZ                                 
+[23] timeBodyGyroscopeStandardDeviationX 
+[24] timeBodyGyroscopeStandardDeviationY                    
+[25] timeBodyGyroscopeStandardDeviationZ
+[26] timeBodyGyroscopeJerkMeanX                         
+[27] timeBodyGyroscopeJerkMeanY
+[28] timeBodyGyroscopeJerkMeanZ                             
+[29] timeBodyGyroscopeJerkStandardDeviationX
+[30] timeBodyGyroscopeJerkStandardDeviationY                
+[31] timeBodyGyroscopeJerkStandardDeviationZ
+[32] timeBodyAccelerationMagnitudeMean                      
+[33] timeBodyAccelerationMagnitudeStandardDeviation
+[34] timeGravityAccelerationMagnitudeMean                  
+[35] timeGravityAccelerationMagnitudeStandardDeviation
+[36] timeBodyAccelerationJerkMagnitudeMean                  
+[37] timeBodyAccelerationJerkMagnitudeStandardDeviation
+[38] timeBodyGyroscopeMagnitudeMean                         
+[39] timeBodyGyroscopeMagnitudeStandardDeviation
+[40] timeBodyGyroscopeJerkMagnitudeMean                     
+[41] timeBodyGyroscopeJerkMagnitudeStandardDeviation
+[42] frequencyBodyAccelerationMeanX                         
+[43] frequencyBodyAccelerationMeanY
+[44] frequencyBodyAccelerationMeanZ                         
+[45] frequencyBodyAccelerationStandardDeviationX
+[46] frequencyBodyAccelerationStandardDeviationY            
+[47] frequencyBodyAccelerationStandardDeviationZ
+[48] frequencyBodyAccelerationMeanFreqX                     
+[49] frequencyBodyAccelerationMeanFreqY
+[50] frequencyBodyAccelerationMeanFreqZ                     
+[51] frequencyBodyAccelerationJerkMeanX
+[52] frequencyBodyAccelerationJerkMeanY                     
+[53] frequencyBodyAccelerationJerkMeanZ
+[54] frequencyBodyAccelerationJerkStandardDeviationX        
+[55] frequencyBodyAccelerationJerkStandardDeviationY
+[56] frequencyBodyAccelerationJerkStandardDeviationZ        
+[57] frequencyBodyAccelerationJerkMeanFreqX
+[58] frequencyBodyAccelerationJerkMeanFreqY                 
+[59] frequencyBodyAccelerationJerkMeanFreqZ
+[60] frequencyBodyGyroscopeMeanX                            
+[61] frequencyBodyGyroscopeMeanY
+[62] frequencyBodyGyroscopeMeanZ                            
+[63] frequencyBodyGyroscopeStandardDeviationX
+[64] frequencyBodyGyroscopeStandardDeviationY               
+[65] frequencyBodyGyroscopeStandardDeviationZ
+[66] frequencyBodyGyroscopeMeanFreqX                        
+[67] frequencyBodyGyroscopeMeanFreqY
+[68] frequencyBodyGyroscopeMeanFreqZ                        
+[69] frequencyBodyAccelerationMagnitudeMean
+[70] frequencyBodyAccelerationMagnitudeStandardDeviation    
+[71] frequencyBodyAccelerationMagnitudeMeanFreq
+[72] frequencyBodyAccelerationJerkMagnitudeMean             
+[73] frequencyBodyAccelerationJerkMagnitudeStandardDeviation
+[74] frequencyBodyAccelerationJerkMagnitudeMeanFreq         
+[75] frequencyBodyGyroscopeMagnitudeMean
+[76] frequencyBodyGyroscopeMagnitudeStandardDeviation       
+[77] frequencyBodyGyroscopeMagnitudeMeanFreq
+[78] frequencyBodyGyroscopeJerkMagnitudeMean                
+[79] frequencyBodyGyroscopeJerkMagnitudeStandardDeviation
+[80] frequencyBodyGyroscopeJerkMagnitudeMeanFreq           
+[81] activity: 1. walking 2. walkingUpstairs 3. walkingDownstairs 4. sitting 5. standing 6. laying
+
+The description of the variables in the original data set reads: 
+
+"The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals 
+(prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass 
+Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity 
+acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ).
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, 
+tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, 
+fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions."
